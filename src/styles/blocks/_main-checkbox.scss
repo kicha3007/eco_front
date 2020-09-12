@@ -1,0 +1,59 @@
+.main-checkbox {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  text-align: left;
+  margin: 0;
+
+  &__default {
+    width: 1px;
+    height: 1px;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    opacity: 0;
+  }
+
+  &__pseudo {
+    position: relative;
+    margin-right: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 24px;
+    background: #ffffff;
+    border-radius: 5px;
+  }
+
+  &__pseudo:before {
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../img/check.png");
+    opacity: 0;
+  }
+
+  &__default:checked + .main-checkbox__pseudo:before {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &__text {
+    flex-basis: 100px;
+    flex-grow: 1;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    /* or 183% */
+    letter-spacing: 0.04em;
+    display: block;
+    margin-top: -3px;
+    max-width: 650px;
+    /* white */
+    color: #ffffff;
+  }
+}
+
+
