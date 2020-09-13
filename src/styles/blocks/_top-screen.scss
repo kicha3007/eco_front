@@ -1,0 +1,111 @@
+.top-screen {
+  background: url("../img/top-screen_bg.jpg") no-repeat center;
+  background-size: cover;
+
+
+
+  &__container {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -195px;
+      right: calc(100% - 70px);
+      width: 990px;
+      height: 590px;
+      background: url("../img/top-screen_left.svg") no-repeat center;
+      background-size: cover;
+      @include phones {
+        width: 257px;
+        height: 134px;
+        background: url("../img/top-screen_left_mobile.svg") no-repeat center;
+        bottom: -48px;
+        right: calc(100% - 79px);
+      }
+
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: calc(100% - 30px);
+      width: 799px;
+      height: 534px;
+      background: url("../img/top-screen_right.svg") no-repeat center;
+      background-size: cover;
+      @include phones {
+        width: 161px;
+        height: 192px;
+        top: 8px;
+        left: calc(65% - 30px);
+        background: url("../img/top-screen_right_mobile.svg") no-repeat center;
+
+      }
+    }
+
+  }
+  &__wrap {
+    padding: 50px 0 100px;
+    @include phones {
+      padding: 35px 0 60px;
+      max-width: 230px;
+    }
+
+
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 74px;
+    line-height: 1;
+
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    @include tablets {
+      font-size: 55px;
+    }
+    @include phones {
+      font-size: 21px;
+      margin-bottom: 25px;
+    }
+
+
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+
+
+
+    color: #FFFFFF;
+    margin-bottom: 115px;
+    @include tablets {
+      font-size: 40px;
+      margin-bottom: 80px;
+    }
+    @include phones {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+  }
+  &__desc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    color: #FFFFFF;
+    @include tablets {
+      font-size: 35px;
+    }
+    @include phones {
+      font-size: 16px;
+    }
+
+
+  }
+
+
+
+}

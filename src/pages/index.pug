@@ -1,20 +1,26 @@
 extend include/template_base
 
-
-
-include include/footer
-include include/header
-
-
-
+include include/blocks/top-screen
+include include/blocks/organization
+include include/blocks/general
+include include/blocks/participants
+include include/blocks/program
+include include/blocks/partners
 
 block variables
 	-
 		var title = 'Детальная страница заказа';
 
 block content
-	+header()
-	+footer()
+	+top-screen()
+	+organization()
+	+program()
+	+participants()
+	+partners()
+	//+general()
+
+
+
 
 
 

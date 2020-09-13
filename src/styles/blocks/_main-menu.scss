@@ -1,0 +1,44 @@
+.main-menu {
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+
+
+  &__item {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 18px;
+    @include laptop {
+      margin: 0 6px;
+    }
+    }
+
+
+
+
+  &__link {
+    display: block;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+    white-space: nowrap;
+
+
+
+    color: #092156;
+    @include laptop {
+      font-size: 16px;
+    }
+    @include tablets {
+      font-size: 14px;
+    }
+
+
+
+  }
+
+
+}
+
+

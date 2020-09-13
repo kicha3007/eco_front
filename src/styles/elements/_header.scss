@@ -1,0 +1,92 @@
+.header {
+  position: relative;
+  background: #F4F0F0;
+
+  &__top {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    @include phones {
+      padding: 5px 0;
+    }
+
+  }
+  &__bottom {
+    display: none;
+    @include phones {
+        display: block;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__column {
+    &_pos_1 {
+      @include phones {
+          flex-grow: 1;
+      }
+    }
+
+    &_pos_2 {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 14px;
+      @include tablets {
+        padding-right: 5px;
+      }
+      @include phones {
+          display: none;
+      }
+    }
+
+    &_pos_3 {
+      display: flex;
+      align-items: center;
+      @include phones {
+        display: none;
+      }
+    }
+
+    &_pos_4 {
+      display: none;
+      @include phones {
+          display: block;
+      }
+    }
+  }
+
+  &__languages {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  &__languages-item {
+    display: block;
+  }
+  &__languages-item + .header__languages-item {
+    margin-left: 26px;
+    @include tablets {
+      margin-left: 15px;
+    }
+  }
+
+  &__languages-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__burger {
+    display: flex;
+    align-items: center;
+  }
+
+  &__burger-img {
+  }
+}

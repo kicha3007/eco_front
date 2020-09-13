@@ -1,0 +1,25 @@
+.logo {
+	&__link {
+		display: block;
+		@include phones {
+		    max-width: 73px;
+		}
+	}
+	// Если лого в svg
+	&__icon {
+		max-width: 100%;
+		fill: #000000;
+	}
+	&__img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	// Если лого в png
+	//&__img {
+	//	display: block;
+	//	max-width: 100%;
+	//	height: auto;
+	//}
+}

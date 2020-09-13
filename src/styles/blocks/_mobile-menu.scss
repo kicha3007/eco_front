@@ -1,0 +1,37 @@
+.mobile-menu {
+  padding-left: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: none;
+  &.active {
+    display: block;
+  }
+
+
+
+  &__item {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__link {
+    padding: 15px 16px 17px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: block;
+    text-align: center;
+
+    color: #F4F0F0;
+    background: #092156;
+    &:hover {
+      background: #0C2969;
+    }
+
+
+
+  }
+}

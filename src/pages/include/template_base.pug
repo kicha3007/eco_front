@@ -2,6 +2,9 @@ include mixins
 include variables
 block variables
 
+include footer
+include header
+
 
 
 
@@ -9,17 +12,16 @@ doctype html
 html(lang="ru")
 	head
 		meta(charset="UTF-8")
-		- title_page = typeof title ==="undefined" ? 'Primavera front' : 'Primavera | '+title
+		- title_page = typeof title ==="undefined" ? 'header' : 'header | '+title
 		title #{title_page}
 		meta(name="viewport", content="width=device-width initial-scale=1.0")
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-		//object(type='image/svg+xml', data='sprite.svg')
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 		//	| Your browser does not support SVG
 		block assets
 			link(rel="stylesheet", href="assets/css/main-min.css")
 
 			script(src="assets/js/libs/jquery-3.5.1.min.js")
-			script(src="assets/js/libs/svg-sprite.js")
+
 			script(src="assets/js/libs/typo.js")
 			script(src="assets/js/libs/countdownTimer.min.js")
 			script(src="assets/js/libs/jquery.fancybox.min.js")
@@ -29,14 +31,14 @@ html(lang="ru")
 
 		.main-wrapper
 
-			include header
+			+header()
 			//if(typeof titlePage !== "undefined" && titlePage)
 			//	h1.all-page-title #{titlePage}
 
 			main.main
 				block content
 
-		include footer.pug
+		+footer()
 
 
 

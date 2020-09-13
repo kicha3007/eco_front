@@ -1,0 +1,180 @@
+.program {
+  background: #e1e0dd;
+  padding: 60px 0 85px;
+  @include phones {
+    padding: 25px 0 18px;
+  }
+
+  &__container {
+    //position: relative;
+    //&::before {
+    //  @include phones {
+    //  content: '';
+    //  display: block;
+    //  position: absolute;
+    //  left: calc(100% - 90px);
+    //  background-size: cover;
+    //
+    //    width: 143px;
+    //    height: 86px;
+    //    background: url("../img/program_right_bottom_mobile.svg") no-repeat center;
+    //    bottom: 46px;
+    //  }
+    //}
+  }
+
+  &__main-title {
+    font-weight: 900;
+    font-size: 74px;
+    color: #092156;
+    margin-bottom: 60px;
+    line-height: 1;
+    @include laptop {
+      font-size: 50px;
+    }
+    @include phones {
+      font-size: 26px;
+      line-height: 1.4;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 80px;
+    max-width: 1078px;
+    @include laptop {
+      margin-bottom: 50px;
+    }
+    @include phones {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    @include phones {
+        flex-wrap: wrap;
+    }
+
+  }
+
+  &__number {
+    font-weight: 900;
+    font-size: 35px;
+    color: #092156;
+    margin-right: 78px;
+    flex-shrink: 0;
+    @include laptop {
+      font-size: 27px;
+    }
+    @include phones {
+        width: 100%;
+      font-size: 14px;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 18px;
+    color: #092156;
+    @include laptop {
+      font-size: 16px;
+    }
+    @include phones {
+      width: 100%;
+      font-size: 11px;
+    }
+  }
+
+  &__wrap {
+  }
+
+  &__row {
+    display: flex;
+    margin: 0 -50px;
+    @include tablets {
+      margin: 0 -25px;
+    }
+    @include phones {
+        flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    margin: 0 50px;
+    width: calc(50% - 100px);
+    @include tablets {
+      margin: 0 25px;
+      width: calc(50% - 50px);
+    }
+    @include phones {
+        width: 100%;
+    }
+    &_pos_1 {
+      @include phones {
+          order: 2;
+      }
+
+    }
+
+    &_pos_2 {
+      @include phones {
+        order: 1;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 27px;
+    color: #092156;
+    margin-bottom: 8px;
+    @include laptop {
+      font-size: 20px;
+    }
+    @include phones {
+      font-size: 11px;
+    }
+  }
+
+  &__desc {
+    font-weight: normal;
+    font-size: 27px;
+    color: #092156;
+    margin-bottom: 30px;
+    @include laptop {
+      font-size: 20px;
+    }
+    @include phones {
+      margin-bottom: 10px;
+      font-size: 11px;
+    }
+  }
+
+  &__btn-wrap {
+    max-width: 376px;
+    margin-top: 70px;
+    @include phones {
+      margin-top: 40px;
+    }
+    @include phones {
+        max-width: 189px;
+      margin: 50px auto 0 ;
+    }
+  }
+
+  &__btn {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    @include laptop {
+      font-size: 27px;
+    }
+    @include phones {
+      font-size: 12px;
+    }
+  }
+}

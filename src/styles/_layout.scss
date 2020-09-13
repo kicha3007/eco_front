@@ -20,12 +20,13 @@ body {
   //прибивка футера к низу
   display: flex;
   flex-direction: column;
-  font-family: Montserrat, sans-serif;
+
 }
 
 .main-wrapper {
   flex: 1 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
+  padding-bottom: 400px;
 
 }
 

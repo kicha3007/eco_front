@@ -1,0 +1,226 @@
+.organization {
+
+  &__outer-wrap {
+    padding: 70px 0 30px;
+
+  }
+  &__container {
+    position: relative;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -239px;
+        right: calc(100% - -50px);
+        width: 384px;
+        height: 652px;
+        background: url("../img/organization_left.svg") no-repeat center;
+        background-size: cover;
+        @include phones {
+            display: none;
+        }
+
+
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 430px;
+        left: calc(100% + 130px);
+        width: 245px;
+        height: 200px;
+        background: url("../img/organization_right.svg") no-repeat center;
+        background-size: cover;
+        @include phones {
+          width: 105px;
+          height: 127px;
+          top: auto;
+          bottom: -18px;
+          left: calc(100% - 60px);
+          background: url("../img/organization_right_bottom.svg") no-repeat center;
+
+        }
+      }
+
+  }
+  &__wrapper {
+
+    &_desc {
+      @include phones {
+          display: none;
+      }
+
+    }
+    &_mobile {
+      display: none;
+      @include phones {
+          display: block;
+      }
+
+    }
+
+  }
+
+  &__main-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 74px;
+    color: #092156;
+    margin-bottom: 125px;
+    @include laptop {
+      font-size: 50px;
+      margin-bottom: 80px;
+    }
+
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 1;
+
+    color: #092156;
+
+    @include laptop {
+      font-size: 40px;
+    }
+    @include phones {
+      font-size: 26px;
+    }
+    &_indent_bottom {
+      margin-bottom: 13px;
+    }
+
+  }
+  &__desc {
+    font-weight: normal;
+    font-size: 27px;
+
+    color: #092156;
+    @include laptop {
+      font-size: 20px;
+    }
+    @include phones {
+      font-size: 14px;
+    }
+    &_indent_bottom {
+      margin-bottom: 30px;
+    }
+
+  }
+  &__inner-wrap {
+
+  }
+  &__row {
+    display: flex;
+    margin: 0 -25px;
+
+    &_pos_1 {
+      margin-bottom: 90px;
+      display: flex;
+      align-items: center;
+      @include laptop {
+        margin-bottom: 35px;
+      }
+
+    }
+    &_pos_2 {
+      margin-bottom: 90px;
+      @include laptop {
+        margin-bottom: 50px;
+      }
+
+    }
+    &_pos_3 {
+      margin-bottom: 60px;
+      @include laptop {
+        margin-bottom: 40px;
+      }
+
+    }
+
+  }
+  &__column {
+    margin: 0 25px;
+    width: calc(50% - 50px);
+    &_pos_1 {
+
+    }
+    &_pos_2 {
+
+    }
+  }
+  &__btn-wrap {
+    max-width: 365px;
+    @include phones {
+        max-width: 190px;
+      margin: 0 auto;
+      
+    }
+    &_pos_1 {
+      margin-left: auto;
+
+
+    }
+    &_pos_2 {
+
+    }
+
+  }
+  &__btn.btn {
+    font-size: 27px;
+    line-height: 32px;
+    @include laptop {
+      font-size: 20px;
+    }
+    @include phones {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+  }
+  &__btn-wrap + .organization__btn-wrap {
+    margin-top: 23px;
+  }
+  &__bottom {
+    @include phones {
+      margin-top: 17px;
+    }
+
+  }
+  &__note {
+    font-weight: normal;
+    font-size: 17px;
+    color: #CECDCB;
+    @include phones {
+      font-size: 7px;
+    }
+    
+
+
+  }
+  &__logo-wrap {
+    display: flex;
+    align-items: center;
+    margin: 0 -12px;
+    @include laptop {
+        flex-wrap: wrap;
+    }
+  }
+  &__logo-item {
+    margin: 0 12px;
+    @include laptop {
+        width: calc(50% - 24px);
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__logo-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+}

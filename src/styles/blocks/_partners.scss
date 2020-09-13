@@ -1,0 +1,92 @@
+.partners {
+  padding: 120px 0 100px;
+  @include laptop {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include phones {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+  &__main-title  {
+    font-weight: 900;
+    font-size: 74px;
+    color: #092156;
+    margin-bottom: 78px;
+    line-height: 1;
+    @include laptop {
+      font-size: 50px;
+      margin-bottom: 50px;
+    }
+    @include phones {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+
+
+  }
+
+  &__wrap {
+
+
+  }
+
+  &__item {
+
+
+
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 27px;
+    color: #092156;
+    margin-bottom: 30px;
+    @include laptop {
+      font-size: 20px;
+    }
+    @include phones {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 -60px  0 ;
+    @include laptop {
+      margin: 0 -30px  0 ;
+    }
+    @include phones {
+      margin: 0 -5px  0 ;
+    }
+
+  }
+
+  &__inner-item {
+
+    margin: 0 60px  100px ;
+    @include laptop {
+      margin: 0 30px  50px ;
+      max-width: 350px;
+    }
+    @include phones {
+      margin: 0 5px  35px ;
+      max-width: 85px;
+    }
+
+
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+  }
+
+
+}
