@@ -1,10 +1,10 @@
 mixin mobile-menu()
 	ul.mobile-menu(data-mobile-menu)
-		li.mobile-menu__item.active(data-mobile-menu-item)
-			a.mobile-menu__link(href="index.html") Формат Форума
-		li.mobile-menu__item(data-mobile-menu-item)
-			a.mobile-menu__link(href="/pillows.html") Программmobile-menu.pugа
-		li.mobile-menu__item(data-mobile-menu-item)
-			a.mobile-menu__link(href="#" ) Участники
-		li.mobile-menu__item(data-mobile-menu-item)
-			a.mobile-menu__link(href="/kpb.html") Партнеры
+		li.mobile-menu__item.active(data-mobile-menu-item data-slow-scroll-to="#organization")
+			.mobile-menu__link Формат Форума
+		li.mobile-menu__item(data-mobile-menu-item data-slow-scroll-to="#program")
+			.mobile-menu__link Программа
+		li.mobile-menu__item(data-mobile-menu-item data-slow-scroll-to="#participants")
+			.mobile-menu__link Участники
+		li.mobile-menu__item(data-mobile-menu-item data-slow-scroll-to="#partners")
+			.mobile-menu__link Партнеры

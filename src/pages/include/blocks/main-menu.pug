@@ -1,10 +1,10 @@
 mixin main-menu()
 	ul.main-menu(data-main-menu)
 		li.main-menu__item.active(data-main-menu-item)
-			a.main-menu__link(href="index.html") О форуме
-		li.main-menu__item(data-main-menu-item)
-			a.main-menu__link(href="/pillows.html") Программа
-		li.main-menu__item(data-main-menu-item)
-			a.main-menu__link(href="#" ) Участники
-		li.main-menu__item(data-main-menu-item)
-			a.main-menu__link(href="/kpb.html") Партнеры
+			.main-menu__link(href="index.html" data-slow-scroll-to="#organization") О форуме
+		li.main-menu__item(data-main-menu-item data-slow-scroll-to="#program")
+			.main-menu__link Программа
+		li.main-menu__item(data-main-menu-item data-slow-scroll-to="#participants")
+			.main-menu__link Участники
+		li.main-menu__item(data-main-menu-item data-slow-scroll-to="#partners")
+			.main-menu__link Партнеры

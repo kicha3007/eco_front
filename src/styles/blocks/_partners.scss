@@ -26,6 +26,23 @@
 
 
   }
+  &__container {
+    position: relative;
+    &::before {
+      @include phones {
+      content: '';
+      display: block;
+      position: absolute;
+        right: calc(100% - 116px);
+      background-size: cover;
+
+        width: 177px;
+        height: 115px;
+        background: url("../img/partners_left_top_mobile.svg") no-repeat center;
+        top: -115px;
+      }
+    }
+  }
 
   &__wrap {
 
