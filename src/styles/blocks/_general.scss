@@ -1,7 +1,7 @@
 .general {
   background: #092156;
-  padding: 80px 0 0;
-  @include phones {
+
+  @include tablets {
     padding-top: 20px;
   }
 
@@ -12,6 +12,7 @@
   &__item {
     outline: none;
     overflow: hidden;
+
   }
   &__wrap {
 
@@ -27,22 +28,30 @@
   &__column {
     margin: 0 85px;
     width: calc(50% - 170px);
+    min-height: 730px;
+
+    padding-top: 80px;
     @include tablets {
+      min-height: auto;
+      padding-top: 0;
+
         width: 100%;
     }
 
     &_pos_1 {
-      padding-bottom: 145px;
+
+      padding-top: 80px;
       @include tablets {
           order: 2;
       }
       @include tablets {
-        padding-bottom: 90px;
+
       }
 
     }
     &_pos_2 {
       position: relative;
+
       @include tablets {
         order: 1;
       }
@@ -70,11 +79,12 @@
         content: '';
         display: block;
         position: absolute;
-        bottom: -140px;
+        bottom: -189px;
         left: 0;
-        width: 808px;
-        height: 522px;
+        width: 1112px;
+        height: 719px;
         background: url("../img/general_bg.svg") no-repeat center;
+        background-size: cover;
         @include tablets {
           display: none;
         }
@@ -87,8 +97,8 @@
         content: '';
         display: block;
         position: absolute;
-        bottom: -273px;
-        left: 367px;
+        bottom: -276px;
+        left: 447px;
         width: 1112px;
         height: 719px;
         background: url("../img/general_bg_big.svg") no-repeat center;
@@ -96,26 +106,37 @@
           display: none;
         }
       }
-      //&::after {
-      //  content: '';
-      //  display: block;
-      //  position: absolute;
-      //  bottom: 0;
-      //  left: 0;
-      //  width: 808px;
-      //  height: 522px;
-      //  background: url("../img/general_bg.svg") no-repeat center;
-      //}
+
+
+    }
+    &_third-slide-first {
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -276px;
+        right: 100%;
+        width: 1112px;
+        height: 719px;
+        background: url("../img/general_bg_big.svg") no-repeat center;
+        @include tablets {
+          display: none;
+        }
+      }
 
     }
     &_indent_min {
       padding-bottom: 45px;
       @include tablets {
-        padding-bottom: 65px;
+        padding-bottom: 70px;
       }
     }
     &_indent_big {
       padding-bottom: 235px;
+      @include tablets {
+        padding-bottom: 0;
+      }
     }
 
   }
@@ -129,6 +150,16 @@
     @include tablets {
       font-size: 14px;
       margin-bottom: 27px;
+    }
+    &_indent_top {
+      //padding-top: 40px;
+      //@include tablets {
+      //  padding-top: 0;
+      //}
+    }
+    &_indent_left {
+      padding-left:  24%;
+
     }
 
   }
@@ -149,7 +180,7 @@
 
     }
     &_indent_top {
-      margin-top: 190px;
+      margin-top: 170px;
       @include tablets {
         margin-top: 60px;
         margin-bottom: 0 !important;

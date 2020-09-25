@@ -1,0 +1,75 @@
+.speakers {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  @include tablets {
+
+    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+  &__main-title {
+    font-weight: 900;
+    font-size: 74px;
+    line-height: 1.1;
+    color: #092156;
+    margin-bottom: 70px;
+    @include laptop {
+      font-size: 50px;
+    }
+    @include tablets {
+
+      margin-bottom: 30px;
+    }
+    @include phones {
+      font-size: 26px;
+    }
+
+
+  }
+  &__list {
+    display: flex;
+    margin: 0 -9px;
+    @include tablets {
+        flex-wrap: wrap;
+      margin-bottom: -15px;
+    }
+
+  }
+  &__item {
+    margin: 0 9px;
+    width: calc(16.66666% - 18px);
+    @include tablets {
+      width: calc(33.333333% - 18px);
+      margin-bottom: 15px;
+    }
+    @include phones {
+      width: calc(50% - 18px);
+    }
+
+  }
+  &__img-box {
+    margin-bottom: 25px;
+
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+  }
+  &__name {
+    font-weight: 900;
+    font-size: 15px;
+
+    color: #092156;
+    margin-bottom: 2px;
+
+  }
+  &__desc {
+    font-weight: normal;
+    font-size: 11px;
+
+    color: #092156;
+
+  }
+}

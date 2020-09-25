@@ -1,0 +1,67 @@
+.dummy-page {
+  height: 100%;
+  position: relative;
+  &::before {
+      content: '';
+      display: block;
+    position: absolute;
+      right: 0;
+
+
+    width: 688px;
+    height: 212px;
+    background: url(../img/dummy-page_left.svg) no-repeat bottom right;
+      top: 0;
+    background-size: 80%;
+    @include laptop {
+      width: 579px;
+      height: 124px;
+      background-size: 53%;
+    }
+
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: fixed;
+    left: 0;
+    background-size: cover;
+
+    width: 652px;
+    height: 377px;
+
+    background: url("../img/dummy-page_right.svg") no-repeat left bottom;
+    bottom: -0;
+    background-size: 80%;
+    @include laptop {
+      background-size: 53%;
+    }
+
+
+
+  }
+
+  &__wrap {
+
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 74px;
+   text-align: center;
+
+    color: #092156;
+    padding: 250px 0 0;
+    position: relative;
+    z-index: 3;
+    padding-left: 50px;
+    padding-right: 50px;
+    @include laptop {
+      font-size: 40px;
+      padding-top: 150px;
+    }
+    @include phones {
+      font-size: 27px;
+    }
+
+  }
+}

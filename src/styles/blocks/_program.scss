@@ -37,6 +37,7 @@
       line-height: 1.4;
       margin-bottom: 25px;
     }
+
   }
 
   &__list {
@@ -157,14 +158,13 @@
 
   &__btn-wrap {
     max-width: 376px;
-    margin-top: 70px;
+
+    flex-grow: 1;
     @include phones {
-      margin-top: 40px;
+      max-width: 189px;
+      margin: 0 auto 10px ;
     }
-    @include phones {
-        max-width: 189px;
-      margin: 50px auto 0 ;
-    }
+
   }
 
   &__btn {
@@ -175,6 +175,11 @@
     }
     @include phones {
       font-size: 12px;
+      padding: 2px 50px 1px;
     }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: center;
   }
 }

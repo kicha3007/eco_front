@@ -1,0 +1,136 @@
+.list-page {
+  &__container {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 340px;
+    @include phones {
+      padding-top: 40px;
+      padding-bottom: 140px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 38px;
+      right: calc(100% + 40px);
+      width: 990px;
+      height: 590px;
+      background: url("../img/list-page_bg_left.svg") no-repeat center;
+      background-size: cover;
+      @include phones {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 734px;
+      right: calc(100% + 40px);
+      width: 990px;
+      height: 590px;
+      background: url("../img/list-page_bg_left.svg") no-repeat center;
+      background-size: cover;
+      @include phones {
+        display: none;
+      }
+    }
+  }
+
+  &__main-title {
+    font-weight: 900;
+    font-size: 67px;
+    color: #092156;
+    line-height: 1;
+    margin-bottom: 140px;
+    @include laptop {
+      font-size: 50px;
+      margin-bottom: 90px;
+    }
+    @include phones {
+      font-size: 21px;
+      margin-bottom: 25px;
+      line-height: 25px;
+    }
+  }
+
+  &__wrap {
+    margin: 0 -28px 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 379px;
+      left: calc(100% + 40px);
+      width: 799px;
+      height: 534px;
+      background: url("../img/list-page_bg_right.svg") no-repeat center;
+      background-size: cover;
+      @include phones {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    margin: 0 28px 90px;
+    width: calc(50% - 56px);
+    @include laptop {
+      margin-bottom: 60px;
+    }
+    @include phones {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__img-box {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    @include phones {
+      max-width: 200px;
+      margin-bottom: 7px;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 1.2;
+    color: #092156;
+    margin-bottom: 15px;
+    @include laptop {
+      font-size: 27px;
+    }
+    @include phones {
+      font-size: 21px;
+    }
+  }
+
+  &__desc {
+    font-weight: normal;
+    font-size: 27px;
+    color: #092156;
+    @include laptop {
+      font-size: 20px;
+    }
+    @include phones {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}

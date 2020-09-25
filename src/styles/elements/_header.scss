@@ -6,7 +6,7 @@
     padding-top: 17px;
     padding-bottom: 17px;
     @include phones {
-      padding: 5px 0;
+      padding: 8px 0;
     }
 
   }
@@ -25,8 +25,13 @@
 
   &__column {
     &_pos_1 {
+
+      max-width: 200px;
+      flex-basis: 150px;
+      flex-grow: 1;
       @include phones {
           flex-grow: 1;
+
       }
     }
 
@@ -48,8 +53,9 @@
       display: flex;
       align-items: center;
       @include phones {
-        display: none;
+        padding-right: 17px;
       }
+
     }
 
     &_pos_4 {
@@ -73,6 +79,9 @@
     margin-left: 26px;
     @include tablets {
       margin-left: 15px;
+    }
+    @include phones {
+      margin-left: 19px;
     }
   }
 

@@ -1,4 +1,6 @@
 
+include speakers
+
 mixin program(data)
 	#program.program&attributes(attributes)
 		.program__container.container
@@ -49,9 +51,6 @@ mixin program(data)
 							.program__title Спикеры:
 							.program__desc
 								| На согласовании
-						.program__btn-wrap
-							a(href="#").program__btn.btn
-								| Скачать программу
 					.program__column.program__column_pos_2
 						.program__content
 							.program__title Темы для обсуждения:
@@ -62,3 +61,10 @@ mixin program(data)
 								| Обсуждение перспектив двустороннего сотрудничества по приоритетным проектам.
 								br
 								| Создание благоприятных условий для развития взаимной торговли и ведения бизнеса.
+				.program__speakers
+					+speakers()
+				.program__bottom
+					.program__btn-wrap
+						a(href="#").program__btn.btn
+							| Скачать программу
+

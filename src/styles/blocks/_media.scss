@@ -17,7 +17,7 @@
       margin-bottom: 40px;
     }
     @include phones {
-      margin-bottom: 12px;
+      margin-bottom: 25px;
       font-size: 26px;
     }
 
@@ -48,36 +48,35 @@
   }
 
   &__item {
-    margin: 0 50px 130px;
+    margin: 0 50px 70px;
     width: calc(50% - 100px);
     @include laptop {
       margin-bottom: 80px;
     }
     @include tablets {
-      margin: 0 25px 60px;
+      margin: 0 25px 50px;
       width: calc(50% - 50px);
     }
     @include phones {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: 21px;
     }
   }
 
   &__title {
     font-weight: bold;
-    font-size: 51px;
+    font-size: 30px;
     color: #092156;
     line-height: 1.1;
     @include laptop {
       font-size: 40px;
     }
     @include tablets {
-      font-size: 30px;
-    }
-    @include phones {
       font-size: 21px;
-      margin-bottom: 20px;
     }
+    //@include phones {
+    //  margin-bottom: 20px;
+    //}
   }
 
   &__img-box {

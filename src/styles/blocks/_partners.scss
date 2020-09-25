@@ -92,7 +92,13 @@
     }
     @include phones {
       margin: 0 5px  35px ;
-      max-width: 85px;
+      max-width: 140px;
+    }
+    &_width_min {
+      max-width: 100px !important;
+      @include phones {
+        max-width: 50px !important;
+      }
     }
 
 

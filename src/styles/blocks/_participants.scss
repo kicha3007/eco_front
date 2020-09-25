@@ -75,6 +75,15 @@
         display: block;
       }
     }
+
+    &_br {
+      br {
+        display: none;
+        @include phones {
+            display: block;
+        }
+      }
+    }
   }
 
   &__subtitle {
@@ -116,6 +125,7 @@
     }
     @include phones {
       margin-bottom: 27px;
+      flex-wrap: wrap;
     }
   }
 
@@ -128,13 +138,10 @@
     }
     @include phones {
       font-size: 14px;
+
     }
 
-    &_show_desc {
-      @include phones {
-        display: none;
-      }
-    }
+
 
     &_show_phone {
       display: none;
@@ -149,12 +156,13 @@
     width: calc(100% - 76px);
 
     &_pos_1 {
+      @include phones {
+        margin-bottom: 17px;
+      }
     }
 
     &_pos_2 {
-      @include phones {
-        display: none;
-      }
+
     }
   }
 
@@ -177,8 +185,8 @@
     }
     @include phones {
       font-size: 12px;
-      padding-top: 2px;
-      padding-bottom: 1px;
+
+      padding: 2px 10px 1px;
     }
   }
 }

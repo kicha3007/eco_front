@@ -47,9 +47,12 @@
 
   }
   &__wrap {
-    padding: 50px 0 100px;
-    @include phones {
+    padding: 35px 0 90px;
+    @include tablets {
       padding: 35px 0 60px;
+    }
+    @include phones {
+
       max-width: 230px;
     }
 
@@ -62,17 +65,21 @@
 
     color: #FFFFFF;
     margin-bottom: 10px;
+    z-index: 3;
+    position: relative;
     @include tablets {
-      font-size: 55px;
+      font-size: 40px;
     }
     @include phones {
       font-size: 21px;
-      margin-bottom: 25px;
+
     }
 
 
   }
   &__subtitle {
+    z-index: 3;
+    position: relative;
     font-style: normal;
     font-weight: 500;
     font-size: 52px;
@@ -80,10 +87,10 @@
 
 
     color: #FFFFFF;
-    margin-bottom: 115px;
+    margin-bottom: 75px;
     @include tablets {
-      font-size: 40px;
-      margin-bottom: 80px;
+      font-size: 30px;
+      margin-bottom: 30px;
     }
     @include phones {
       font-size: 20px;
@@ -92,12 +99,14 @@
 
   }
   &__desc {
+    z-index: 3;
+    position: relative;
     font-style: normal;
     font-weight: 500;
     font-size: 44px;
     color: #FFFFFF;
     @include tablets {
-      font-size: 35px;
+      font-size: 25px;
     }
     @include phones {
       font-size: 16px;
